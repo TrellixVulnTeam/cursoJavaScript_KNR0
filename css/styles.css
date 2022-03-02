@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@keyframes loader {
+  100% {
+    transform: rotate(360deg); } }
+
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  min-height: 100vh;
+  transition: all .5s; }
+
+nav {
+  transition: all .5s; }
+
+h1 {
+  font-size: 8rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 2rem; }
+
+select {
+  background-color: #c5c5c5;
+  font-size: 3rem;
+  border-style: none;
+  padding: 2rem;
+  border-radius: 3rem;
+  box-shadow: inset 6px 6px 12px #9a9a9a,inset -6px -6px 12px #f0f0f0; }
+
+.form {
+  margin: 1rem; }
+  .form__boton {
+    font-size: 2rem;
+    margin: 1rem;
+    border-style: none;
+    background-color: #c5c5c5;
+    color: #8a8a8a;
+    border-radius: 2rem;
+    transition: all .5s; }
+    .form__boton:hover {
+      transform: scale(1.1); }
+
+.div__botones {
+  transition: all .5s; }
+
+.buscar__input {
+  background-color: #c5c5c5;
+  font-size: 3rem;
+  border-style: none;
+  padding: 2rem;
+  border-radius: 3rem;
+  box-shadow: inset 6px 6px 12px #9a9a9a,inset -6px -6px 12px #f0f0f0; }
+
+.body__dark {
+  background-color: #353535; }
+
+.body__light {
+  background-color: #e0e0e0; }
+
+.inicio__tit {
+  text-align: center;
+  font-size: 6rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  border-bottom: solid .5rem goldenrod; }
+
+.inicio__subtit {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem;
+  padding: 2rem;
+  border: solid .5rem #c5c5c5; }
+
+.inicio__lista {
+  text-align: center;
+  font-size: 2rem;
+  border-left: solid 1rem goldenrod;
+  border-bottom: solid .5rem goldenrod;
+  padding: 1rem;
+  margin: 2rem; }
+  .inicio__lista-tit {
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: solid .5rem #c4fd2d; }
+
+.nav__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #c5c5c5;
+  width: 10rem;
+  transition: width .5s; }
+  .nav__nav:hover {
+    width: 20rem; }
+
+.nav__icon {
+  margin: auto;
+  text-align: center;
+  width: 7rem;
+  height: 6rem; }
+
+.nav__boton {
+  border-radius: 0rem;
+  border-style: none;
+  background-color: inherit;
+  font-size: 2rem;
+  transition: all .5s; }
+  .nav__boton-img {
+    width: 5rem;
+    height: auto; }
+
+.footer__footer {
+  background-color: #c5c5c5;
+  position: sticky;
+  bottom: 0; }
+
+.footer__logo {
+  margin: 2rem; }
+  .footer__logo-img {
+    transition: all .5s; }
+    .footer__logo-img:hover {
+      transform: scale(1.3); }
+
+.footer__autor {
+  opacity: .6;
+  font-size: 2rem;
+  text-decoration: underline; }
+
+.footer__boton {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  border: solid .5rem #c5c5c5;
+  border-radius: 3rem;
+  padding: 1rem;
+  margin: 2rem;
+  transition: all .5s; }
+  .footer__boton:link {
+    color: black; }
+  .footer__boton:visited {
+    color: black; }
+  .footer__boton:hover {
+    color: black;
+    transform: scale(1.05); }
+  .footer__boton:active {
+    color: black; }
+
+.pokes__main {
+  min-height: 50rem; }
+
+.pokes__nombre {
+  text-transform: capitalize;
+  text-align: left;
+  margin-left: 20rem;
+  font-size: 8rem;
+  border-bottom: solid #c4fd2d .5rem; }
+
+.pokes__detalle {
+  text-align: left;
+  padding: 4rem; }
+  .pokes__detalle-tit {
+    border: solid .5rem #c5c5c5;
+    font-size: 4rem;
+    margin-top: 2rem; }
+
+.pokes__imagen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../assets/back.png);
+  background-position: center;
+  border-radius: 50%;
+  border: solid .5rem #c4fd2d;
+  transition: all .5s;
+  animation-name: fadein;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 1s; }
+  .pokes__imagen:hover {
+    transform: scale(1.1);
+    border-color: transparent; }
+  .pokes__imagen-actual {
+    width: 30rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+
+.pokes__obj {
+  font-size: 3rem;
+  text-align: center;
+  border: solid .5rem goldenrod;
+  margin: 1rem;
+  padding: 1rem; }
+  .pokes__obj-img {
+    width: 10rem;
+    height: auto; }
+
+.pokes__noObj {
+  font-size: 4rem;
+  margin: 1rem;
+  border: solid .5rem goldenrod; }
+
+.pokes__error {
+  text-align: center;
+  margin: 2rem;
+  border: solid black .4rem; }
+  .pokes__error-tit {
+    font-size: 3rem;
+    margin: 2rem; }
+  .pokes__error-actual {
+    background-color: #c5c5c5;
+    padding: 1rem;
+    border: solid 0.3rem #ff4444; }
+  .pokes__error-texto {
+    font-size: 2rem;
+    margin: 2rem; }
+
+.pokes__datos {
+  border: solid .5rem #c5c5c5;
+  font-size: 3rem;
+  margin: 1rem;
+  transition: all .5s; }
+  .pokes__datos:hover {
+    border: solid .5rem #c4fd2d; }
+  .pokes__datos-actual h4 {
+    font-size: 2rem; }
+  .pokes__datos-actual h3 {
+    font-size: 3rem; }
+
+.pokes__habilidades, .pokes__habilidades-obj {
+  border: solid .5rem #c5c5c5;
+  font-size: 3rem;
+  margin: 1rem;
+  transition: all .5s; }
+  .pokes__habilidades:hover, .pokes__habilidades-obj:hover {
+    border: solid .5rem #c4fd2d; }
+  .pokes__habilidades-obj {
+    margin: 2rem; }
+  .pokes__habilidades h3, .pokes__habilidades-obj h3 {
+    text-align: center; }
+  .pokes__habilidades-stat {
+    font-size: 2.5rem;
+    margin: 1rem 0rem;
+    text-align: center; }
+  .pokes__habilidades-texto {
+    margin: 0rem 2rem 2rem 0rem;
+    border-bottom: solid goldenrod .5rem;
+    border-right: solid goldenrod 1rem; }
+  .pokes__habilidades-tit {
+    text-align: left;
+    font-size: 3rem;
+    padding: 1rem;
+    border-left: solid .3rem black; }
+  .pokes__habilidades-actual {
+    font-size: 2rem; }
+
+.pokes__poke {
+  margin: 1rem;
+  padding: .5rem;
+  text-align: center;
+  text-transform: capitalize;
+  border: solid #c5c5c5 .5rem;
+  transition: all .5s; }
+  .pokes__poke:hover {
+    border: solid #c4fd2d .5rem; }
+
+.contenedor__botones {
+  height: 10rem; }
+
+.item__img {
+  width: 20rem;
+  height: auto;
+  margin-top: 2rem; }
+
+.item__p {
+  font-size: 2rem;
+  padding: 1rem; }
+
+.item__tit {
+  margin-top: 2rem;
+  font-size: 4rem; }

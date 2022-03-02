@@ -1,0 +1,340 @@
+// fuente
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@keyframes loader {
+    100%{transform: rotate(360deg);}
+}
+
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    transition: all .5s;
+}
+nav{
+    transition: all .5s;
+}
+h1{
+    font-size: 8rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2rem;
+}
+select{
+    background-color: #c5c5c5;
+    font-size: 3rem;
+    border-style: none;
+    padding: 2rem;
+    border-radius: 3rem;
+    box-shadow: inset 6px 6px 12px #9a9a9a,inset -6px -6px 12px #f0f0f0;
+}
+.form{
+    margin: 1rem;
+    &__boton{
+        font-size: 2rem;
+        margin: 1rem;
+        border-style: none;
+        background-color: #c5c5c5;
+        color: #8a8a8a;
+        border-radius: 2rem;
+        transition: all .5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.div__botones{
+    transition: all .5s;
+}
+.buscar__input{
+    background-color: #c5c5c5;
+    font-size: 3rem;
+    border-style: none;
+    padding: 2rem;
+    border-radius: 3rem;
+    box-shadow: inset 6px 6px 12px #9a9a9a,inset -6px -6px 12px #f0f0f0;
+}
+.body{
+    &__dark{
+        background-color: #353535;
+    }
+    &__light{
+        background-color: #e0e0e0;
+    }
+}
+.inicio{
+    &__tit{
+        text-align: center;
+        font-size: 6rem;
+        padding: 1rem;
+        margin-bottom: 4rem;
+        border-bottom: solid .5rem goldenrod;
+    }
+    &__subtit{
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem;
+        padding: 2rem;
+        border: solid .5rem #c5c5c5;
+    }
+    &__lista{
+        text-align: center;
+        font-size: 2rem;
+        border-left: solid 1rem goldenrod;
+        border-bottom: solid .5rem goldenrod;
+        padding: 1rem;
+        margin: 2rem;
+        &-tit{
+            font-size: 3rem;
+            text-align: center;
+            border-bottom: solid .5rem #c4fd2d;
+        }
+    }
+}
+.nav{
+    &__nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #c5c5c5;
+        width: 10rem;
+        transition: width .5s;
+        &:hover{
+            width: 20rem;
+        }
+    }
+    &__icon{
+        margin: auto;
+        text-align: center;
+        width: 7rem;
+        height: 6rem;
+    }
+    &__boton{
+        border-radius: 0rem;
+        border-style: none;
+        background-color: inherit;
+        font-size: 2rem;
+        transition: all .5s;
+        &-img{
+            width: 5rem;
+            height: auto;
+        }
+    }
+}
+.footer{
+    &__footer{
+        background-color: #c5c5c5;
+        position: sticky;
+        bottom: 0;
+    }
+    &__logo{
+        margin: 2rem;
+        &-img{
+            transition: all .5s;
+            &:hover{
+            transform: scale(1.3);
+            }
+        }
+    }
+    &__autor{
+        opacity: .6;
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+    &__boton{
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        border: solid .5rem #c5c5c5;
+        border-radius: 3rem;
+        padding: 1rem;
+        margin: 2rem;
+        transition: all .5s;
+        &:link{
+            color: black;
+        }
+        &:visited{
+            color: black;
+        }
+        &:hover{
+            color: black;
+            transform: scale(1.05);
+        }
+        &:active{
+            color: black;
+        }
+    }
+}
+.pokes{
+    &__main{
+        min-height: 50rem;
+    }
+    &__nombre{
+        text-transform: capitalize;
+        text-align: left;
+        margin-left: 20rem;
+        font-size: 8rem;
+        border-bottom:solid #c4fd2d .5rem;
+    }
+    &__detalle{
+        text-align: left;
+        padding: 4rem;
+        &-tit{
+            border: solid .5rem #c5c5c5;
+            font-size: 4rem;
+            margin-top: 2rem;
+        }
+    }
+    &__imagen{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(../assets/back.png);
+        background-position: center;
+        border-radius: 50%;
+        border: solid .5rem #c4fd2d;
+        transition: all .5s;
+        animation-name: fadein;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        &:hover{
+            transform: scale(1.1);
+            border-color: transparent;
+        }
+        &-actual{
+            width: 30rem;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__obj{
+        font-size: 3rem;
+        text-align: center;
+        border:solid .5rem goldenrod;
+        margin: 1rem;
+        padding: 1rem;
+        &-img{
+            width: 10rem;
+            height: auto;
+        }
+    }
+    &__noObj{
+        font-size: 4rem;
+        margin: 1rem;
+        border: solid .5rem goldenrod;
+    }
+    &__error{
+        text-align: center;
+        margin: 2rem;
+        border: solid black .4rem;
+        &-tit{
+            font-size: 3rem;
+            margin: 2rem;
+        }
+        &-actual{
+            background-color: #c5c5c5;
+            padding: 1rem;
+            border: solid .3rem rgb(255, 68, 68);
+        }
+        &-texto{
+            font-size: 2rem;
+            margin: 2rem;
+        }
+    }
+    &__datos{
+        border: solid .5rem #c5c5c5;
+        font-size: 3rem;
+        margin: 1rem;
+        transition: all .5s;
+        &:hover{
+            border: solid .5rem #c4fd2d;
+        }
+        &-actual{
+            & h4{
+                font-size: 2rem;
+            }
+            & h3{
+                font-size: 3rem;
+            }
+        }
+    }
+    &__habilidades{
+        border: solid .5rem #c5c5c5;
+        font-size: 3rem;
+        margin: 1rem;
+        transition: all .5s;
+        &:hover{
+            border: solid .5rem #c4fd2d;
+        }
+        &-obj{
+            @extend .pokes__habilidades;
+            margin: 2rem;
+        }
+        & h3{
+            text-align: center;
+        }
+        &-stat{
+            font-size: 2.5rem;
+            margin: 1rem 0rem;
+            text-align: center;
+        }
+        &-texto{
+            margin: 0rem 2rem 2rem 0rem;
+            border-bottom: solid goldenrod .5rem;
+            border-right: solid goldenrod 1rem;
+        }
+        &-tit{
+            text-align: left;
+            font-size: 3rem;
+            padding: 1rem;
+            border-left: solid .3rem black;
+        }
+        &-actual{
+            font-size: 2rem;
+        }
+    }
+    &__poke{
+        margin: 1rem;
+        padding: .5rem;
+        text-align: center;
+        text-transform: capitalize;
+        border: solid #c5c5c5 .5rem;
+        transition: all .5s;
+        &:hover{
+            border: solid #c4fd2d .5rem;
+        }
+    }
+}
+.contenedor{
+    &__botones{
+        height: 10rem;
+    }
+}
+.item{
+    &__img{
+    width: 20rem;
+    height: auto;
+    margin-top: 2rem;
+    }
+    &__p{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    &__tit{
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+}
